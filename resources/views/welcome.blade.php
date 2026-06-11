@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РемСкол — Ремонт сколов и трещин лобового стекла в Зеленограде</title>
+    <meta name="description" content="Ремонт сколов и трещин лобового стекла за 30–60 минут в Зеленограде. Полировка и шлифовка автостёкол. Гарантия от 6 месяцев, выезд к клиенту.">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+</head>
+<body>
+
+<!-- ===================== ШАПКА ===================== -->
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#hero" class="logo">
+            <span class="logo__icon">◈</span>
+            <span class="logo__text">Рем<b>Скол</b></span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#services" class="nav__link">Услуги</a>
+            <a href="#prices" class="nav__link">Цены</a>
+            <a href="#works" class="nav__link">Работы</a>
+            <a href="#reviews" class="nav__link">Отзывы</a>
+            <a href="#contacts" class="nav__link">Контакты</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="tel:+79160125160" class="header__phone">+7 (916) 012-51-60</a>
+            <a href="#order" class="btn btn--primary btn--sm">Записаться</a>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+
+    <div class="container hero__inner">
+        <div class="hero__content" data-animate>
+            <span class="hero__badge">Студия ремонта автостёкол</span>
+            <h1 class="hero__title">Ремонт сколов и трещин лобового стекла <span class="accent">за 30–60 минут</span></h1>
+            <p class="hero__subtitle">
+                Сохраняем заводское стекло и экономим вам до 90% от стоимости замены.
+                Скол или трещина перестанут расти, а обзор снова станет чистым.
+            </p>
+            <div class="hero__buttons">
+                <a href="#order" class="btn btn--primary">Рассчитать стоимость</a>
+                <a href="#works" class="btn btn--ghost">Наши работы</a>
+            </div>
+        </div>
+
+        <div class="hero__photo" data-animate data-delay="150">
+            <!-- ФОТО: мастер за работой над лобовым стеклом, формат ~4:5 -->
+            <div class="photo-placeholder photo-placeholder--hero">
+                <span>ФОТО: мастер за&nbsp;работой над&nbsp;лобовым стеклом</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="hero__triggers" data-animate data-delay="300">
+            <li><span class="accent">✓</span> Гарантия от 6 месяцев</li>
+            <li><span class="accent">✓</span> Выезд по городу</li>
+            <li><span class="accent">✓</span> Оплата после приёмки</li>
+            <li><span class="accent">✓</span> Опыт мастеров от 5 лет</li>
+        </ul>
+    </div>
+</section>
+
+<!-- ===================== ПОЧЕМУ РЕМОНТ, А НЕ ЗАМЕНА ===================== -->
+<section class="section" id="why">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Проблема → решение</span>
+            <h2 class="section__title">Почему ремонт, а не замена?</h2>
+            <p class="section__desc">Заводское стекло всегда лучше нового аналога. И вот почему.</p>
+        </div>
+
+        <div class="grid grid--4">
+            <article class="card glass" data-animate>
+                <div class="card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3 class="card__title">Заводское стекло остаётся с вами</h3>
+                <p class="card__text">Только оригинальное стекло гарантирует корректную работу датчиков дождя, света, камер и проекции.</p>
+            </article>
+            <article class="card glass" data-animate data-delay="100">
+                <div class="card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3 class="card__title">Заводская герметичность</h3>
+                <p class="card__text">Мы не трогаем вклейку и силовой каркас кузова — исключаем риск протечек и коррозии по периметру.</p>
+            </article>
+            <article class="card glass" data-animate data-delay="200">
+                <div class="card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                </div>
+                <h3 class="card__title">Экономия времени и денег</h3>
+                <p class="card__text">30–60 минут вместо целого дня и в 5–10 раз дешевле, чем заказ и установка нового стекла.</p>
+            </article>
+            <article class="card glass" data-animate data-delay="300">
+                <div class="card__icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20V4h5a4.5 4.5 0 0 1 0 9H9"/><path d="M6 16h7"/></svg>
+                </div>
+                <h3 class="card__title">Стоимость авто при продаже</h3>
+                <p class="card__text">Родные стёкла без следов переклейки — весомый аргумент при осмотре машины покупателем.</p>
+            </article>
+        </div>
+
+        <div class="stats" data-animate>
+            <div class="stats__item">
+                <span class="stats__num" data-counter="3500">0</span>
+                <span class="stats__label">отремонтированных стёкол</span>
+            </div>
+            <div class="stats__item">
+                <span class="stats__num" data-counter="9">0</span>
+                <span class="stats__label">лет работаем со стеклом</span>
+            </div>
+            <div class="stats__item">
+                <span class="stats__num" data-counter="90">0</span>
+                <span class="stats__label">% дефекта устраняем в среднем</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== УСЛУГИ ===================== -->
+<section class="section section--alt" id="services">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Услуги</span>
+            <h2 class="section__title">Что мы делаем</h2>
+            <p class="section__desc">Берёмся за дефекты, при которых другие уже советуют менять стекло.</p>
+        </div>
+
+        <div class="grid grid--3">
+            <article class="service glass" data-animate>
+                <!-- ФОТО: скол на лобовом стекле крупным планом, формат 16:10 -->
+                <div class="photo-placeholder photo-placeholder--card">
+                    <span>ФОТО: скол крупным планом</span>
+                </div>
+                <div class="service__body">
+                    <h3 class="service__title">Ремонт сколов</h3>
+                    <p class="service__text">Заполняем скол оптическим полимером под давлением. Разрушение останавливается, скол становится почти незаметен.</p>
+                    <div class="service__bottom">
+                        <span class="service__price">от 1 990 ₽</span>
+                        <a href="#order" class="btn btn--ghost btn--sm">Рассчитать</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="service glass" data-animate data-delay="120">
+                <!-- ФОТО: трещина на лобовом стекле, формат 16:10 -->
+                <div class="photo-placeholder photo-placeholder--card">
+                    <span>ФОТО: трещина на&nbsp;лобовом стекле</span>
+                </div>
+                <div class="service__body">
+                    <h3 class="service__title">Ремонт трещин</h3>
+                    <p class="service__text">Останавливаем трещины любой длины: засверловка, заполнение полимером, полимеризация. Без замены стекла.</p>
+                    <div class="service__bottom">
+                        <span class="service__price">от 2 490 ₽</span>
+                        <a href="#order" class="btn btn--ghost btn--sm">Рассчитать</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="service glass" data-animate data-delay="240">
+                <!-- ФОТО: процесс полировки лобового стекла машинкой, формат 16:10 -->
+                <div class="photo-placeholder photo-placeholder--card">
+                    <span>ФОТО: процесс полировки стекла</span>
+                </div>
+                <div class="service__body">
+                    <h3 class="service__title">Полировка и шлифовка</h3>
+                    <p class="service__text">Убираем затёртости от дворников, пескоструй, мелкие царапины и «стену» от встречного солнца.</p>
+                    <div class="service__bottom">
+                        <span class="service__price">от 8 990 ₽</span>
+                        <a href="#order" class="btn btn--ghost btn--sm">Рассчитать</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ДО / ПОСЛЕ ===================== -->
+<section class="section" id="works">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Наши работы</span>
+            <h2 class="section__title">До и после</h2>
+            <p class="section__desc">Потяните ползунок, чтобы сравнить результат.</p>
+        </div>
+
+        <div class="grid grid--3 grid--works">
+            <!-- Карточка сравнения: внутри два слоя — «до» и «после» -->
+            <figure class="compare glass" data-animate>
+                <div class="compare__box" data-compare>
+                    <!-- ФОТО: скол ДО ремонта -->
+                    <div class="compare__before photo-placeholder"><span>ФОТО: скол ДО</span></div>
+                    <!-- ФОТО: скол ПОСЛЕ ремонта (тот же ракурс) -->
+                    <div class="compare__after photo-placeholder photo-placeholder--after"><span>ФОТО: скол ПОСЛЕ</span></div>
+                    <div class="compare__handle"><span>⇆</span></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+                </div>
+                <figcaption class="compare__caption">Скол от камня · ремонт 40 минут</figcaption>
+            </figure>
+
+            <figure class="compare glass" data-animate data-delay="100">
+                <div class="compare__box" data-compare>
+                    <!-- ФОТО: трещина 25 см ДО ремонта -->
+                    <div class="compare__before photo-placeholder"><span>ФОТО: трещина ДО</span></div>
+                    <!-- ФОТО: трещина ПОСЛЕ ремонта (тот же ракурс) -->
+                    <div class="compare__after photo-placeholder photo-placeholder--after"><span>ФОТО: трещина ПОСЛЕ</span></div>
+                    <div class="compare__handle"><span>⇆</span></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+                </div>
+                <figcaption class="compare__caption">Трещина 25 см · остановлена, след минимален</figcaption>
+            </figure>
+
+            <figure class="compare glass" data-animate data-delay="200">
+                <div class="compare__box" data-compare>
+                    <!-- ФОТО: затёртости от дворников ДО полировки (против солнца) -->
+                    <div class="compare__before photo-placeholder"><span>ФОТО: затёртости ДО</span></div>
+                    <!-- ФОТО: стекло ПОСЛЕ полировки (тот же ракурс) -->
+                    <div class="compare__after photo-placeholder photo-placeholder--after"><span>ФОТО: стекло ПОСЛЕ</span></div>
+                    <div class="compare__handle"><span>⇆</span></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+                </div>
+                <figcaption class="compare__caption">Полировка от затёртостей дворников</figcaption>
+            </figure>
+
+            <figure class="compare glass" data-animate>
+                <div class="compare__box" data-compare>
+                    <!-- ФОТО: пескоструй («стена» на солнце) ДО шлифовки -->
+                    <div class="compare__before photo-placeholder"><span>ФОТО: пескоструй ДО</span></div>
+                    <!-- ФОТО: стекло ПОСЛЕ шлифовки -->
+                    <div class="compare__after photo-placeholder photo-placeholder--after"><span>ФОТО: стекло ПОСЛЕ</span></div>
+                    <div class="compare__handle"><span>⇆</span></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+                </div>
+                <figcaption class="compare__caption">Комплексная шлифовка от пескоструя</figcaption>
+            </figure>
+
+            <figure class="compare glass" data-animate data-delay="100">
+                <div class="compare__box" data-compare>
+                    <!-- ФОТО: скол с трещинами-«лучами» ДО ремонта -->
+                    <div class="compare__before photo-placeholder"><span>ФОТО: скол с&nbsp;лучами ДО</span></div>
+                    <!-- ФОТО: ПОСЛЕ ремонта -->
+                    <div class="compare__after photo-placeholder photo-placeholder--after"><span>ФОТО: скол с&nbsp;лучами ПОСЛЕ</span></div>
+                    <div class="compare__handle"><span>⇆</span></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+                </div>
+                <figcaption class="compare__caption">Скол с «лучами» в зоне обзора водителя</figcaption>
+            </figure>
+
+            <figure class="compare glass" data-animate data-delay="200">
+                <div class="compare__box" data-compare>
+                    <!-- ФОТО: глубокие царапины ДО локальной полировки -->
+                    <div class="compare__before photo-placeholder"><span>ФОТО: царапины ДО</span></div>
+                    <!-- ФОТО: ПОСЛЕ локальной полировки -->
+                    <div class="compare__after photo-placeholder photo-placeholder--after"><span>ФОТО: царапины ПОСЛЕ</span></div>
+                    <div class="compare__handle"><span>⇆</span></div>
+                    <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
+                </div>
+                <figcaption class="compare__caption">Локальное устранение царапин от скребка</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== КАК МЫ РАБОТАЕМ ===================== -->
+<section class="section section--alt" id="steps">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Процесс</span>
+            <h2 class="section__title">Как мы работаем</h2>
+        </div>
+
+        <ol class="steps">
+            <li class="step glass" data-animate>
+                <span class="step__num">01</span>
+                <h3 class="step__title">Заявка и фото дефекта</h3>
+                <p class="step__text">Пришлите фото скола или трещины в мессенджер — этого достаточно для расчёта стоимости.</p>
+            </li>
+            <li class="step glass" data-animate data-delay="100">
+                <span class="step__num">02</span>
+                <h3 class="step__title">Диагностика и честный прогноз</h3>
+                <p class="step__text">Осматриваем стекло и заранее говорим, какого результата реально достичь в вашем случае.</p>
+            </li>
+            <li class="step glass" data-animate data-delay="200">
+                <span class="step__num">03</span>
+                <h3 class="step__title">Ремонт 30–90 минут</h3>
+                <p class="step__text">Работаем у нас в студии или выезжаем к вам. Вы можете наблюдать за процессом.</p>
+            </li>
+            <li class="step glass" data-animate data-delay="300">
+                <span class="step__num">04</span>
+                <h3 class="step__title">Приёмка и оплата</h3>
+                <p class="step__text">Принимаете работу лично. <b class="accent">Оплата — только после приёмки.</b></p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- ===================== ЧЕСТНЫЙ ПОДХОД ===================== -->
+<section class="section" id="honest">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Доверие</span>
+            <h2 class="section__title">Честный подход и гарантии</h2>
+        </div>
+
+        <div class="grid grid--3">
+            <article class="card glass card--line" data-animate>
+                <h3 class="card__title">Прогноз результата заранее</h3>
+                <p class="card__text">Мы не делаем стекло «новым» — мы возвращаем комфорт обзора. Устраняем 70–90% дефекта и честно говорим, что получится именно у вас.</p>
+            </article>
+            <article class="card glass card--line" data-animate data-delay="120">
+                <h3 class="card__title">Контроль оптических искажений</h3>
+                <p class="card__text">Знаем физику процесса: правильная технология шлифовки исключает эффект «линзы» и сохраняет безопасность вождения.</p>
+            </article>
+            <article class="card glass card--line" data-animate data-delay="240">
+                <h3 class="card__title">Материальная ответственность</h3>
+                <p class="card__text">На время работ несём полную материальную ответственность за ваш автомобиль. Это зафиксировано в договоре.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ЦЕНЫ ===================== -->
+<section class="section section--alt" id="prices">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Прайс</span>
+            <h2 class="section__title">Цены</h2>
+        </div>
+
+        <div class="tabs" data-animate>
+            <div class="tabs__nav" role="tablist">
+                <button class="tabs__btn is-active" data-tab="chips" role="tab">Сколы и трещины</button>
+                <button class="tabs__btn" data-tab="polish" role="tab">Полировка</button>
+            </div>
+
+            <div class="tabs__panel is-active" data-panel="chips" role="tabpanel">
+                <ul class="price-list glass">
+                    <li class="price-list__row">
+                        <div>
+                            <span class="price-list__name">Ремонт скола</span>
+                            <span class="price-list__note">Останавливает разрушение, скол почти незаметен</span>
+                        </div>
+                        <span class="price-list__price">от 1 990 ₽</span>
+                    </li>
+                    <li class="price-list__row">
+                        <div>
+                            <span class="price-list__name">Трещина до 15 см</span>
+                            <span class="price-list__note">Засверловка и заполнение полимером</span>
+                        </div>
+                        <span class="price-list__price">от 2 490 ₽</span>
+                    </li>
+                    <li class="price-list__row">
+                        <div>
+                            <span class="price-list__name">Трещина свыше 15 см</span>
+                            <span class="price-list__note">Ремонт длинных трещин без замены стекла</span>
+                        </div>
+                        <span class="price-list__price">от 4 990 ₽</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tabs__panel" data-panel="polish" role="tabpanel">
+                <ul class="price-list glass">
+                    <li class="price-list__row">
+                        <div>
+                            <span class="price-list__name">Полировка от затёртостей дворников</span>
+                            <span class="price-list__note">Убирает следы дворников и помутнение</span>
+                        </div>
+                        <span class="price-list__price">8 990 ₽</span>
+                    </li>
+                    <li class="price-list__row">
+                        <div>
+                            <span class="price-list__name">Комплексная шлифовка</span>
+                            <span class="price-list__note">Пескоструй, «стена» на встречном солнце</span>
+                        </div>
+                        <span class="price-list__price">25 000 ₽</span>
+                    </li>
+                    <li class="price-list__row">
+                        <div>
+                            <span class="price-list__name">Покрытие «Антидождь»</span>
+                            <span class="price-list__note">Чистое стекло даже в непогоду</span>
+                        </div>
+                        <span class="price-list__price">3 000 ₽</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price-cta glass" data-animate>
+            <p>Точную стоимость определим <b>по фото за 5 минут</b> — без визита в студию.</p>
+            <a href="#order" class="btn btn--primary">Отправить фото</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ОТЗЫВЫ ===================== -->
+<section class="section" id="reviews">
+    <div class="container">
+        <div class="section__head" data-animate>
+            <span class="section__label">Отзывы</span>
+            <h2 class="section__title">Что говорят клиенты</h2>
+        </div>
+
+        <div class="slider" data-animate>
+            <div class="slider__track" id="reviewsTrack">
+                <article class="review glass">
+                    <!-- ФОТО: автомобиль клиента после ремонта, формат 16:9 -->
+                    <div class="photo-placeholder photo-placeholder--review"><span>ФОТО: авто клиента</span></div>
+                    <p class="review__text">«Камень прилетел на трассе, скол с лучами прямо перед глазами. Думал — всё, менять. Отремонтировали за 40 минут, теперь нужно специально присматриваться, чтобы найти место скола.»</p>
+                    <footer class="review__footer">
+                        <span class="review__name">Дмитрий</span>
+                        <span class="review__date">14 мая 2026</span>
+                    </footer>
+                </article>
+
+                <article class="review glass">
+                    <!-- ФОТО: автомобиль клиента, формат 16:9 -->
+                    <div class="photo-placeholder photo-placeholder--review"><span>ФОТО: авто клиента</span></div>
+                    <p class="review__text">«Трещина 30 см ползла от края стекла. На двух сервисах сказали «только замена». Здесь засверлили, заполнили — три месяца езжу, трещина не сдвинулась ни на миллиметр.»</p>
+                    <footer class="review__footer">
+                        <span class="review__name">Алексей</span>
+                        <span class="review__date">02 апреля 2026</span>
+                    </footer>
+                </article>
+
+                <article class="review glass">
+                    <!-- ФОТО: автомобиль клиента, формат 16:9 -->
+                    <div class="photo-placeholder photo-placeholder--review"><span>ФОТО: авто клиента</span></div>
+                    <p class="review__text">«Делал полировку от затёртостей дворников. Против солнца была сплошная пелена, ездить вечером было реально опасно. После полировки стекло прозрачное, никаких линз и искажений.»</p>
+                    <footer class="review__footer">
+                        <span class="review__name">Марина</span>
+                        <span class="review__date">19 февраля 2026</span>
+                    </footer>
+                </article>
+
+                <article class="review glass">
+                    <!-- ФОТО: автомобиль клиента, формат 16:9 -->
+                    <div class="photo-placeholder photo-placeholder--review"><span>ФОТО: авто клиента</span></div>
+                    <p class="review__text">«Мастер сразу честно сказал: скол старый, на 100% не уйдёт, останется точка. Так и вышло — точка есть, если знать, куда смотреть. Зато трещина не пошла, и датчик дождя работает как раньше.»</p>
+                    <footer class="review__footer">
+                        <span class="review__name">Игорь</span>
+                        <span class="review__date">28 декабря 2025</span>
+                    </footer>
+                </article>
+
+                <article class="review glass">
+                    <!-- ФОТО: автомобиль клиента, формат 16:9 -->
+                    <div class="photo-placeholder photo-placeholder--review"><span>ФОТО: авто клиента</span></div>
+                    <p class="review__text">«Вызвал мастера к офису — приехал в назначенное время, всё сделал на парковке за час. Удобно, что не пришлось никуда ехать и ждать. Оплатил после того, как сам всё проверил.»</p>
+                    <footer class="review__footer">
+                        <span class="review__name">Сергей</span>
+                        <span class="review__date">10 ноября 2025</span>
+                    </footer>
+                </article>
+            </div>
+
+            <div class="slider__controls">
+                <button class="slider__btn" id="reviewsPrev" aria-label="Предыдущий отзыв">←</button>
+                <div class="slider__dots" id="reviewsDots"></div>
+                <button class="slider__btn" id="reviewsNext" aria-label="Следующий отзыв">→</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section section--alt" id="faq">
+    <div class="container container--narrow">
+        <div class="section__head" data-animate>
+            <span class="section__label">FAQ</span>
+            <h2 class="section__title">Частые вопросы</h2>
+        </div>
+
+        <div class="faq" data-animate>
+            <details class="faq__item glass">
+                <summary class="faq__question">Останется ли след после ремонта скола?</summary>
+                <div class="faq__answer">
+                    <p>В среднем мы устраняем 70–90% видимости дефекта. Свежий скол после ремонта почти незаметен, старый и загрязнённый может оставить небольшую точку. Главное — разрушение стекла полностью останавливается.</p>
+                </div>
+            </details>
+            <details class="faq__item glass">
+                <summary class="faq__question">Можно ли остановить длинную трещину?</summary>
+                <div class="faq__answer">
+                    <p>Да. Мы засверливаем концы трещины, заполняем её полимером и полимеризуем ультрафиолетом. Трещина перестаёт расти даже при перепадах температур и на неровной дороге.</p>
+                </div>
+            </details>
+            <details class="faq__item glass">
+                <summary class="faq__question">Сколько времени занимает работа?</summary>
+                <div class="faq__answer">
+                    <p>Скол — 30–60 минут, трещина — 60–90 минут, полировка всего лобового стекла — 2–4 часа. Уезжаете сразу после приёмки, никаких ограничений по эксплуатации.</p>
+                </div>
+            </details>
+            <details class="faq__item glass">
+                <summary class="faq__question">Пройдёт ли стекло техосмотр после ремонта?</summary>
+                <div class="faq__answer">
+                    <p>Да. Отремонтированный дефект не мешает обзору и соответствует требованиям техрегламента. Мы дополнительно следим, чтобы в зоне работы дворников не оставалось искажений.</p>
+                </div>
+            </details>
+            <details class="faq__item glass">
+                <summary class="faq__question">Когда ремонт невозможен и нужна замена?</summary>
+                <div class="faq__answer">
+                    <p>Если трещина проходит через зону крепления датчиков, сильно загрязнена или стекло повреждено насквозь. В этом случае мы честно скажем об этом на диагностике — навязывать ремонт не будем.</p>
+                </div>
+            </details>
+            <details class="faq__item glass">
+                <summary class="faq__question">Можно ли мыть машину после ремонта?</summary>
+                <div class="faq__answer">
+                    <p>Бесконтактную мойку лучше отложить на 2–3 дня, чтобы полимер окончательно набрал прочность. Обычный дождь и омыватель стекла не страшны сразу после ремонта.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== ФОРМА ЗАЯВКИ ===================== -->
+<section class="section" id="order">
+    <div class="container">
+        <div class="order glass" data-animate>
+            <div class="order__info">
+                <h2 class="order__title">Пришлите фото дефекта — <span class="accent">рассчитаем стоимость за 5 минут</span></h2>
+                <p class="order__text">Оставьте контакты, и мы перезвоним. Или напишите напрямую в мессенджер — так быстрее.</p>
+                <div class="order__messengers">
+                    <a href="https://t.me/+79160125160" class="btn btn--tg" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.66c.25-1.06-.54-1.94-1.53-1.56L2.87 9.84c-1.14.44-1.12 1.6.03 1.95l4.47 1.4 1.73 5.5c.26.83 1.32 1.07 1.92.43l2.49-2.62 4.65 3.41c.78.57 1.88.14 2.08-.81l1.7-14.44zM9.5 13.3l8.32-5.24c.39-.25.8.28.46.6l-6.86 6.42-.27 3.02-1.65-4.8z"/></svg>
+                        Telegram
+                    </a>
+                    <a href="https://wa.me/79160125160" class="btn btn--wa" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.55 2 2.1 6.45 2.1 11.94c0 1.75.46 3.46 1.33 4.97L2 22l5.22-1.37a9.9 9.9 0 0 0 4.82 1.23c5.49 0 9.94-4.45 9.94-9.94S17.53 2 12.04 2zm0 18.06a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.07.81.82-3-.2-.31a8.07 8.07 0 0 1-1.24-4.31c0-4.47 3.64-8.1 8.12-8.1a8.1 8.1 0 0 1 8.1 8.1c0 4.48-3.63 8.12-8.1 8.12zm4.45-6.07c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21-.72-.65-1.21-1.44-1.35-1.69-.14-.24-.02-.37.1-.5.11-.11.25-.28.37-.42.12-.14.16-.24.24-.41.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.3-.22.24-.85.83-.85 2.03s.87 2.36 1 2.52c.12.16 1.72 2.62 4.16 3.68.58.25 1.04.4 1.39.51.58.19 1.12.16 1.54.1.47-.07 1.44-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z"/></svg>
+                        WhatsApp
+                    </a>
+                    <!-- КОНТАКТ: заменить на ссылку профиля в MAX -->
+                    <a href="https://max.ru" class="btn btn--max" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.06 2 11.07c0 2.85 1.45 5.39 3.72 7.05V22l3.43-1.88c.91.24 1.87.37 2.85.37 5.52 0 10-4.06 10-9.07S17.52 2 12 2zm-5 12.5v-7h1.8L11 11l2.2-3.5H15v7h-1.8v-4.1L11.4 13h-.8l-1.8-2.6v4.1H7z"/></svg>
+                        MAX
+                    </a>
+                </div>
+            </div>
+
+            <form class="order__form" id="orderForm" novalidate>
+                <div class="field">
+                    <input type="text" id="name" name="name" class="field__input" placeholder="Ваше имя" autocomplete="name" required>
+                    <span class="field__error" data-error="name">Укажите имя</span>
+                </div>
+                <div class="field">
+                    <input type="tel" id="phone" name="phone" class="field__input" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                    <span class="field__error" data-error="phone">Укажите корректный номер</span>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <span class="checkbox__mark"></span>
+                    <span class="checkbox__label">Я согласен(а) с <a href="/privacy" target="_blank">политикой конфиденциальности</a> и даю <a href="/consent" target="_blank">согласие на обработку персональных данных</a></span>
+                </label>
+                <span class="field__error" data-error="agree">Необходимо согласие</span>
+                <button type="submit" class="btn btn--primary btn--full">Рассчитать стоимость</button>
+                <p class="order__success" id="orderSuccess" hidden>Спасибо! Мы свяжемся с вами в течение 15 минут.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== КОНТАКТЫ + ФУТЕР ===================== -->
+<footer class="footer" id="contacts">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__col">
+                <a href="#hero" class="logo">
+                    <span class="logo__icon">◈</span>
+                    <span class="logo__text">Рем<b>Скол</b></span>
+                </a>
+                <p class="footer__about">Студия ремонта автостёкол в Зеленограде. Работаем у себя или выезжаем к вам — по Зеленограду и области.</p>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__heading">Контакты</h4>
+                <p>г. Зеленоград, Андреевка, 31Б</p>
+                <p>Пн–Вс: 10:00–20:00</p>
+                <p><a href="tel:+79160125160">+7 (916) 012-51-60</a></p>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__heading">Реквизиты</h4>
+                <p>Самозанятый Чуенко Сергей Сергеевич</p>
+                <p>ИНН: 930301542586</p>
+                <p><a href="/privacy">Политика конфиденциальности</a></p>
+                <p><a href="/consent">Согласие на обработку данных</a></p>
+                <p><a href="/offer">Договор оферты</a></p>
+            </div>
+
+            <div class="footer__col footer__col--map">
+                <iframe
+                    class="footer__map"
+                    src="https://yandex.ru/map-widget/v1/?ll=37.138508%2C55.979128&z=16&pt=37.138508,55.979128,pm2azm"
+                    title="РемСкол на карте — Зеленоград, Андреевка 31Б"
+                    loading="lazy"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <p class="footer__copy">© 2026 РемСкол — ремонт сколов, трещин и полировка автостёкол</p>
+    </div>
+</footer>
+
+<!-- ===================== ПЛАВАЮЩИЕ ЭЛЕМЕНТЫ ===================== -->
+<button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+<a href="tel:+79160125160" class="float-call" aria-label="Позвонить">✆</a>
+
+<script src="{{ asset('js/script.js') }}" defer></script>
+</body>
+</html>
