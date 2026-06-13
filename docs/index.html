@@ -24,10 +24,9 @@
     <meta name="geo.position" content="55.979128;37.138508">
     <meta name="ICBM" content="55.979128, 37.138508">
 
-    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Структурированные данные: JSON-LD обёрнут в verbatim, иначе Blade парсит его атрибуты как директивы -->
-    @verbatim
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -119,11 +118,10 @@
         ]
     }
     </script>
-    @endverbatim
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -185,7 +183,7 @@
         </div>
 
         <div class="hero__photo" data-animate data-delay="150">
-            <img src="{{ asset('images/hero-master.png') }}" alt="Мастер полирует лобовое стекло автомобиля в студии РемСкол" class="hero__img" width="1024" height="824" fetchpriority="high">
+            <img src="images/hero-master.png" alt="Мастер полирует лобовое стекло автомобиля в студии РемСкол" class="hero__img" width="1024" height="824" fetchpriority="high">
         </div>
     </div>
 
@@ -267,7 +265,7 @@
 
         <div class="grid grid--3">
             <article class="service glass" data-animate>
-                <img src="{{ asset('images/service-chips.png') }}" alt="Ремонт скола лобового стекла — мастер с инструментом" class="service__img" loading="lazy" width="800" height="500">
+                <img src="images/service-chips.png" alt="Ремонт скола лобового стекла — мастер с инструментом" class="service__img" loading="lazy" width="800" height="500">
                 <div class="service__body">
                     <h3 class="service__title">Ремонт сколов</h3>
                     <p class="service__text">Заполняем скол оптическим полимером под давлением. Разрушение останавливается, скол становится почти незаметен.</p>
@@ -280,7 +278,7 @@
 
             <article class="service glass" data-animate data-delay="120">
                 <!-- ФОТО: трещина на лобовом стекле, формат 16:10 -->
-                <img src="{{ asset('images/service-cracks.png') }}" alt="Трещина на лобовом стекле автомобиля" class="service__img" loading="lazy" width="800" height="500">
+                <img src="images/service-cracks.png" alt="Трещина на лобовом стекле автомобиля" class="service__img" loading="lazy" width="800" height="500">
                 <div class="service__body">
                     <h3 class="service__title">Ремонт трещин</h3>
                     <p class="service__text">Останавливаем трещины любой длины: засверловка, заполнение полимером, полимеризация. Без замены стекла.</p>
@@ -292,7 +290,7 @@
             </article>
 
             <article class="service glass" data-animate data-delay="240">
-                <img src="{{ asset('images/service-polish.png') }}" alt="Полировка и шлифовка лобового стекла автомобиля" class="service__img" loading="lazy" width="800" height="500">
+                <img src="images/service-polish.png" alt="Полировка и шлифовка лобового стекла автомобиля" class="service__img" loading="lazy" width="800" height="500">
                 <div class="service__body">
                     <h3 class="service__title">Полировка и шлифовка</h3>
                     <p class="service__text">Убираем затёртости от дворников, пескоструй, мелкие царапины и «стену» от встречного солнца.</p>
@@ -320,10 +318,10 @@
             <figure class="compare glass" data-animate>
                 <div class="compare__box" data-compare>
                     <div class="compare__before">
-                        <img src="{{ asset('images/works/chip-before.jpg') }}" alt="Скол от камня до ремонта" loading="lazy" width="960" height="772">
+                        <img src="images/works/chip-before.jpg" alt="Скол от камня до ремонта" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__after">
-                        <img src="{{ asset('images/works/chip-after.jpg') }}" alt="Скол от камня после ремонта" loading="lazy" width="960" height="772">
+                        <img src="images/works/chip-after.jpg" alt="Скол от камня после ремонта" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__handle"><span>⇆</span></div>
                     <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
@@ -334,10 +332,10 @@
             <figure class="compare glass" data-animate data-delay="100">
                 <div class="compare__box" data-compare>
                     <div class="compare__before">
-                        <img src="{{ asset('images/works/crack-before.jpg') }}" alt="Трещина 25 см до ремонта" loading="lazy" width="960" height="772">
+                        <img src="images/works/crack-before.jpg" alt="Трещина 25 см до ремонта" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__after">
-                        <img src="{{ asset('images/works/crack-after.jpg') }}" alt="Трещина 25 см после ремонта" loading="lazy" width="960" height="772">
+                        <img src="images/works/crack-after.jpg" alt="Трещина 25 см после ремонта" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__handle"><span>⇆</span></div>
                     <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
@@ -348,10 +346,10 @@
             <figure class="compare glass" data-animate data-delay="200">
                 <div class="compare__box" data-compare>
                     <div class="compare__before">
-                        <img src="{{ asset('images/works/wiper-before.jpg') }}" alt="Затёртости от дворников до полировки" loading="lazy" width="960" height="772">
+                        <img src="images/works/wiper-before.jpg" alt="Затёртости от дворников до полировки" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__after">
-                        <img src="{{ asset('images/works/wiper-after.jpg') }}" alt="Стекло после полировки от затёртостей" loading="lazy" width="960" height="772">
+                        <img src="images/works/wiper-after.jpg" alt="Стекло после полировки от затёртостей" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__handle"><span>⇆</span></div>
                     <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
@@ -362,10 +360,10 @@
             <figure class="compare glass" data-animate>
                 <div class="compare__box" data-compare>
                     <div class="compare__before">
-                        <img src="{{ asset('images/works/sandblast-before.jpg') }}" alt="Пескоструй на стекле до шлифовки" loading="lazy" width="960" height="720">
+                        <img src="images/works/sandblast-before.jpg" alt="Пескоструй на стекле до шлифовки" loading="lazy" width="960" height="720">
                     </div>
                     <div class="compare__after">
-                        <img src="{{ asset('images/works/sandblast-after.jpg') }}" alt="Стекло после шлифовки от пескоструя" loading="lazy" width="960" height="720">
+                        <img src="images/works/sandblast-after.jpg" alt="Стекло после шлифовки от пескоструя" loading="lazy" width="960" height="720">
                     </div>
                     <div class="compare__handle"><span>⇆</span></div>
                     <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
@@ -376,10 +374,10 @@
             <figure class="compare glass" data-animate data-delay="100">
                 <div class="compare__box" data-compare>
                     <div class="compare__before">
-                        <img src="{{ asset('images/works/rays-before.jpg') }}" alt="Скол с лучами до ремонта" loading="lazy" width="960" height="772">
+                        <img src="images/works/rays-before.jpg" alt="Скол с лучами до ремонта" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__after">
-                        <img src="{{ asset('images/works/rays-after.jpg') }}" alt="Скол с лучами после ремонта" loading="lazy" width="960" height="772">
+                        <img src="images/works/rays-after.jpg" alt="Скол с лучами после ремонта" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__handle"><span>⇆</span></div>
                     <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
@@ -390,10 +388,10 @@
             <figure class="compare glass" data-animate data-delay="200">
                 <div class="compare__box" data-compare>
                     <div class="compare__before">
-                        <img src="{{ asset('images/works/scratches-before.jpg') }}" alt="Царапины от скребка до полировки" loading="lazy" width="960" height="772">
+                        <img src="images/works/scratches-before.jpg" alt="Царапины от скребка до полировки" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__after">
-                        <img src="{{ asset('images/works/scratches-after.jpg') }}" alt="Стекло после локальной полировки царапин" loading="lazy" width="960" height="772">
+                        <img src="images/works/scratches-after.jpg" alt="Стекло после локальной полировки царапин" loading="lazy" width="960" height="772">
                     </div>
                     <div class="compare__handle"><span>⇆</span></div>
                     <input type="range" class="compare__range" min="0" max="100" value="50" aria-label="Сравнение до и после">
@@ -549,7 +547,7 @@
                 <article class="review glass">
                     <header class="review__head">
                         <div class="review__avatar">
-                            <img src="{{ asset('images/reviews/dmitriy.jpg') }}" alt="Дмитрий" width="52" height="52" loading="lazy">
+                            <img src="images/reviews/dmitriy.jpg" alt="Дмитрий" width="52" height="52" loading="lazy">
                         </div>
                         <div class="review__meta">
                             <span class="review__name">Дмитрий</span>
@@ -562,7 +560,7 @@
                 <article class="review glass">
                     <header class="review__head">
                         <div class="review__avatar">
-                            <img src="{{ asset('images/reviews/alexey.jpg') }}" alt="Алексей" width="52" height="52" loading="lazy">
+                            <img src="images/reviews/alexey.jpg" alt="Алексей" width="52" height="52" loading="lazy">
                         </div>
                         <div class="review__meta">
                             <span class="review__name">Алексей</span>
@@ -575,7 +573,7 @@
                 <article class="review glass">
                     <header class="review__head">
                         <div class="review__avatar">
-                            <img src="{{ asset('images/reviews/marina.jpg') }}" alt="Марина" width="52" height="52" loading="lazy">
+                            <img src="images/reviews/marina.jpg" alt="Марина" width="52" height="52" loading="lazy">
                         </div>
                         <div class="review__meta">
                             <span class="review__name">Марина</span>
@@ -588,7 +586,7 @@
                 <article class="review glass">
                     <header class="review__head">
                         <div class="review__avatar">
-                            <img src="{{ asset('images/reviews/igor.jpg') }}" alt="Игорь" width="52" height="52" loading="lazy">
+                            <img src="images/reviews/igor.jpg" alt="Игорь" width="52" height="52" loading="lazy">
                         </div>
                         <div class="review__meta">
                             <span class="review__name">Игорь</span>
@@ -601,7 +599,7 @@
                 <article class="review glass">
                     <header class="review__head">
                         <div class="review__avatar">
-                            <img src="{{ asset('images/reviews/sergey.jpg') }}" alt="Сергей" width="52" height="52" loading="lazy">
+                            <img src="images/reviews/sergey.jpg" alt="Сергей" width="52" height="52" loading="lazy">
                         </div>
                         <div class="review__meta">
                             <span class="review__name">Сергей</span>
@@ -759,6 +757,6 @@
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
 </a>
 
-<script src="{{ asset('js/script.js') }}" defer></script>
+<script src="js/script.js" defer></script>
 </body>
 </html>

@@ -1,2 +1,7 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /privacy
+Disallow: /consent
+Disallow: /offer
+
+Sitemap: https://remskol.ru/sitemap.xml
